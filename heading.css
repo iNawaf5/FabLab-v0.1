@@ -1,0 +1,38 @@
+@keyframes slider {
+    from {
+        transform: translateX(-120%);
+    }
+}
+#header0{
+    text-align: start;
+    animation: slider 1.2s
+}
+#header1{
+    animation: slider 1.4s;
+    text-align: start;
+}
+
+.heading-con{
+    height: 99.6vh;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.heading-con {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.header{
+    font-size: 6rem;
+    color: #E5E5E5;
+    animation: slider 1s;
+}
+.headings_div{
+    width: fit-content;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 6%;
+}
