@@ -3,10 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>FabLab |KFUPM|</title>
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="nav.css">
         <link rel="stylesheet" href="heading.css">
+        <link rel="stylesheet" href="Overview.css">
+        <link rel="icon" href="imgs/WhatsApp_Image_2024-12-09_at_12.24.06_283a90ba-removebg-preview.png">
     </head>
     <body>
 
@@ -21,31 +23,76 @@
 
                         <!-- Logo container -->
                         <div class="log-con">
-                            <img src="imgs/image-removebg-preview (4).png" alt="">
+                            <a href="/main.html"><img src="imgs/WhatsApp_Image_2024-12-09_at_12.24.06_283a90ba-removebg-preview.png" alt=""></a>
                         </div>
         
                         <!-- Nav Content -->
                         <ul>
-                            <li><a href="##">Home</a></li>
-                            <li><a href="##">Projects</a></li>
-                            <li><a href="##">Fab Lab</a></li>
-                            <li><a href="##">Help</a></li>
+                            <li><a class="nav-content" href="/main.html">Home</a></li>
+                            <li><a class="nav-content" href="#overview">Overview</a></li>
+                            <li><a class="nav-content" href="##">Projects</a></li>
+                            <li><a class="nav-content" href="##">Help</a></li>
                         </ul>
                     </nav>
                 </section>
                 <section class="heading-con">
                     <div class="headings_div">
-                        <h1 id="header0" class="header">Fabrication</h1>
-                        <h1 id="header1" class="header">Lab 2025</h1>
+                        <h1 id="header0" class="header">FabLab</h1>
+                        <h1 id="header1" class="header">KFUPM 2025</h1>
+                      </div>
+
+                        <!-- Button -->
+
+                      <div class="btn_div">
+                        <button onclick="location.href='#overvieww'" class="btn">
+                          <span>
+                            <b>Explore -</b>
+                          </span>
+                        </button>
                       </div>
                 </section>
             </section>
             
+            <!-- Second section Overview -->
 
+                <section id="overvieww" class="overview">
 
+                    <div class="span_con">
+                        <div class="spaner">
+                          <h1 id="span1" class="span0">Overview</h1>
+                        </div>
+                      </div>
+
+                    <div class="topCon">
+                        <div class="textCon1">
+                            <div class="text2">
+                                <h1>30</h1>
+                                <p>30 inventions have been developed, each contributing to technological progress and creative solutions.</p>
+                            </div>
+                            <div class="text1">
+                                <h1>3+</h1>
+                                <p>Over 3 years of experience in engineering, design, and product development have shaped our expertise.</p>
+                            </div>
+                            <div class="text2">
+                                <h1>5000</h1>
+                                <p>Over 5,000 products have been sold, demonstrating the impact and demand for our creations.</p>
+                            </div>
+                        </div>
+
+                            <div class="divder"></div>
+                            
+                        <div class="imgCon1">
+                            <img src="/imgs/top.jpg" alt="" width="600px">
+                        </div>
+                    </div>
+                    <div class="bottomCon">
+
+                    </div>
+                </section>
 
 
         <script src="Progressbar.js"></script>
         <script src="navBar.js"></script>
+        <script src="overview.js"></script>
     </body>
     </html>

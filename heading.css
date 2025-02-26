@@ -1,15 +1,17 @@
-@keyframes slider {
+/* @keyframes slider {
     from {
         transform: translateX(-120%);
     }
-}
+} */
 #header0{
     text-align: start;
-    animation: slider 1.2s
+    animation: slider 1.2s;
+    margin: 20px;
 }
 #header1{
     animation: slider 1.4s;
     text-align: start;
+    margin: 20px;
 }
 
 .heading-con{
@@ -33,6 +35,6 @@
     width: fit-content;
     text-align: center;
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 6%;
 }
