@@ -1,0 +1,58 @@
+/* Title animation */
+@keyframes slider{
+    from{
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-120%);
+    }
+}
+#header0{
+    animation: slider 1.2s ease-in-out;
+}
+#header1{
+    animation: slider 1.4s ease-in-out;
+}
+#header0, #header1{
+    animation-timeline: view(5% 70%);
+}
+
+/* Text content animation */
+@keyframes opacity{
+    from{
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.text2{
+    animation: opacity 1s ease-out both;
+}
+.text1{
+    animation: opacity 1.5s ease-out both;
+}
+.text1, .text2{
+    animation-timeline: view(85% 0%);
+}
+
+body{
+    height: 1000vh;
+}
+/* Image animation */
+#overviewImg {
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+    transform: translateX(-100%);
+    transition: .6s;
+}
+#overviewImg:hover{
+    scale: 1.1;
+}
+
+
+
+
+
+/* Padding for text content DONT FORGETTTT!! */

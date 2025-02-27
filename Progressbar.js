@@ -1,6 +1,5 @@
 window.onscroll = function() {
     updateProgressBar();
-    updateNavbar();
 };
 
 const bar = document.querySelector('#progress-con div');

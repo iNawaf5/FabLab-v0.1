@@ -5,11 +5,9 @@
 } */
 #header0{
     text-align: start;
-    animation: slider 1.2s;
     margin: 20px;
 }
 #header1{
-    animation: slider 1.4s;
     text-align: start;
     margin: 20px;
 }

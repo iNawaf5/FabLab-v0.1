@@ -49,6 +49,7 @@ nav {
 
 .log-con img {
   width: 100px;
+  z-index: 9993;
 }
 .nav-content {
   background-image: linear-gradient(
