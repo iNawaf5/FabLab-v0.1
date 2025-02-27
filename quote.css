@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
+.quote{
+    display: flex;
+    background-color: #161616;
+    padding: 50px;
+    position: relative;
+    z-index: -111;
+}
+.quoteImg{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+.quoteText{
+    width: 60%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.blockquote{
+    content: "\201C";
+    font-size: 5em;
+    color: rgba(255, 255, 255);
+    font-family:Open Sans;
+    width: fit-content;
+    border-bottom: outset grey 3px; 
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+.blockquote::before {
+    content: "\201C";
+    font-size: 4em;
+    color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    bottom: 200px;
+    left: 870px;
+    transform: rotate(180deg);
+}
+.quoteText span{
+    align-self: flex-end;
+    margin-right: 10%;
+    transform: translateY(-50px);
+    
+}
