@@ -3,12 +3,16 @@ body {
   overflow-x: hidden;
   font-family: poppins;
   scroll-behavior: smooth;
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  background-color: #1e1e1e;
 }
 * {
   font-family: poppins;
   scroll-behavior: smooth;
 }
-ul {
+.ulNav ,.small-Nav-Content {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -18,7 +22,7 @@ ul {
   margin-right: 20%;
   font-weight: 600;
 }
-ul a {
+.ulNav a {
   text-decoration: none;
   color: whitesmoke;
 }
@@ -41,7 +45,6 @@ nav {
 .nav-con {
   display: flex;
   justify-content: center;
-  border: 2px solid red;
 }
 .log-con {
   margin-left: 5%;
