@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function () {
     
     if (nav) { 
 
-      nav.style.backgroundColor = 'red';
   
       function updateProgressBar() {
         const scrollPosition = document.documentElement.scrollTop;

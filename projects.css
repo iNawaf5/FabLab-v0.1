@@ -1,132 +1,178 @@
-.projects-con{
-    margin-top: 117px;
+/* Small NavBar */
+.projects-con {
+    margin-top: 140px;
 }
-.small-Nav-Content{
-    text-decoration: none;
-    color: whitesmoke;
+.divder-line-nav{
+    width: 85%;
+    border-bottom: 2px solid whitesmoke;
+    justify-self: center;
 }
 .small-nav-li{
-    text-decoration: none;
-    color: whitesmoke;
-}
-.small-nav-li:focus{
-    border-bottom: 2px solid #54b3d6;
-}
-.project-card{
-    width: 21.13%;
-    position: relative;
-}
-.card-tags-con{
-    position: absolute;
-    display: flex;
-    gap: 40px;
-    top: 75%;   
-    left: 7%;
-    border: 2px solid white;
-    width: 100%;
-}
-.project-card img{
-    border-radius: 24px;
-}
-.project-card{
-    position: relative;
-    height: 30vh;
-}
-.card-con{
-    border: 2px solid red;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 8%;
     display: flex;
     justify-content: center;
-    gap: 5%;
+    color: whitesmoke;
 }
-.card{
-    width: 25%;
-    height: 35vh;
-    background-image: url(imgs/v.jpg);
-    background-size: cover;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: end;
-    border-radius: 24px;
+.small-nav-li a{
+    color: whitesmoke;
+    text-decoration: none;
+    
 }
-.card-background{   
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    right: 0%;
-    bottom: 0%;
+#All{
+    width: 4%;
 }
-.card-text-con{
-    align-self: flex-start;
-    width: 100%;
-    color: white;
-    /* Linear gradient fix IMPORTANNTTT! */
-    background: linear-gradient(180deg, rgba(35,35,35,0.4234068627450981) 0%, rgba(17,17,17,0.5662640056022409) 100%);
-    height: 10vh;
-    transition: .6s;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+.small-Nav-Content{
+    gap: 80px;
 }
-.card-text-con h2{
-    margin-left: 5%;
-}   
-.tag-con{
-    /* Display Grid IMPORTANTTTT!! */
-    display: flex;
-    gap: 20px;
-    margin-right: 5%;
-    width: 30%;
-}
-.tag-con h5{
-    border: 2px solid white;
-    padding: 5px;
-    width: 50%;
-}
-.card-heading{
-    display: flex;
-    width: 100%;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-self: flex-start;
-}
-.card-p-con{
-    font-size: .8rem;
-    padding-left: 10px;
-    padding-right: 10px;
+.small-nav-li.active{
+    background-color: rgb(73, 73, 73);
+    border-bottom: 4px solid rgb(222, 222, 222);
 }
 
-.card-p-con  , .card-btn-con{
-    display: none;
-}
-.card-btn-con{
-    justify-content: end;
-}
-.card-btn-con button{
-    width: 20%;
-    transition: .6s;
-    margin-right: 7%;
-    border-radius: 24px;
-    outline: none;
-    border: 2px solid white;
-    background: transparent;
-    color: white;
-    cursor: pointer;
-    padding: 1px;
-    font-size: 15px;
-}
-.card-btn-con button:hover{
-    width: 30%;
-    background: rgba(0, 0, 0, 0.5);
+/* Project Cards */
+
+.card-tags-con {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  top: 75%;
+  left: 7%;
+  border: 2px solid white;
+  width: 100%;
+  padding: 5px;
 }
 
-.card:hover .card-text-con{
-    height: 25vh;
-}
-.card:hover .card-p-con , .card-btn-con{
-    display: flex;
+.project-card img {
+  border-radius: 24px;
 }
 
+.card-con {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.card {
+  width: 25%;
+  height: 35vh;
+  background-image: url(imgs/v.jpg);
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+  border-radius: 24px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.305);
+  border: 2px solid #161616;
+}
+
+.card-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.card-text-con {
+  align-self: flex-start;
+  width: 100%;
+  color: white;
+  border-radius: 24px;
+  background: linear-gradient(
+    180deg,
+    rgba(35, 35, 35, 0.423) 0%,
+    rgba(17, 17, 17, 0.566) 100%
+  );
+  height: 10vh;
+  transition: height 0.6s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-text-con h2 {
+  margin-left: 5%;
+  font-size: 1.2rem;
+}
+
+.tag-con {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-right: 5%;
+  width: 25%;
+}
+
+.tag-con h5 {
+  border: 2px solid white;
+  padding: 3px;
+  font-size: 0.8rem;
+  text-align: center;
+  width: 100%;
+}
+
+.card-heading {
+  display: flex;
+  width: 100%;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+}
+
+.card-p-con {
+  font-size: 0.8rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.card-btn-con {
+  display: flex;
+  justify-content: end;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.6s ease-in-out, visibility 0.6s ease-in-out;
+}
+
+.card-btn-con button {
+  width: 25%;
+  transition: 0.6s;
+  margin-right: 7%;
+  border-radius: 24px;
+  outline: none;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  padding: 3px;
+  font-size: 12px;
+}
+
+.card-btn-con button:hover {
+  width: 35%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.card:hover .card-text-con {
+  height: 25vh;
+}
+
+.card:hover .card-p-con,
+.card:hover .card-btn-con {
+  opacity: 1;
+  visibility: visible;
+}
+.card:hover .card-p-con {
+  transition: opacity 0.6s ease-in-out, visibility 0.6s ease-in-out;
+}

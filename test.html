@@ -3,90 +3,122 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Mission</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-
-    .mission-section {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      padding: 40px 20px;
-      background-color: #fff;
-      max-width: 1200px;
-      margin: 0 auto;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .text {
-      flex: 1;
-      max-width: 50%;
-      padding: 20px;
-    }
-
-    .text h1 {
-      font-size: 2rem;
-      margin-bottom: 15px;
-      color: #2c3e50;
-    }
-
-    .text p {
-      font-size: 1rem;
-      line-height: 1.6;
-      color: #555;
-    }
-
-    .image {
-      flex: 1;
-      max-width: 45%;
-      padding: 20px;
-    }
-
-    .image img {
-      width: 100%;
-      border-radius: 20px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    @media (max-width: 768px) {
-      .mission-section {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .text, .image {
-        max-width: 100%;
-        padding: 10px;
-      }
-
-      .image img {
-        margin-top: 20px;
-      }
-    }
-  </style>
+  <title>Document</title>
+  <link rel="stylesheet" href="test.css">
 </head>
 <body>
-  <div class="mission-section">
-    <div class="text">
-      <h1>Our Mission</h1>
-      <p>
-        There's this notion that to grow a business, you have to be ruthless. But we know there's a better way 
-        to grow. One where what's good for the bottom line is also good for customers. We believe businesses can 
-        grow with a conscience, and succeed with a soul—and that they can do it with inbound. That's why we've 
-        created an ecosystem uniting software, education, and community to help businesses grow better every day.
-      </p>
+  <section class="card-wrapper">
+    <div class="card-con">
+        <!-- Cards (Repeated for Infinite Scroll) -->
+        <div class="card">
+            <div class="card-text-con">
+                <div class="card-heading">
+                    <h2>Title 1</h2>
+                    <div class="tag-con">
+                        <h5>Tag 1</h5>
+                        <h5>Tag 2</h5>
+                    </div>
+                </div>
+                <div class="card-p-con">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="card-btn-con">
+                    <button>Click</button>
+                </div>
+            </div>
+        </div>  
+
+        <div class="card">
+            <div class="card-text-con">
+                <div class="card-heading">
+                    <h2>Title 2</h2>
+                    <div class="tag-con">
+                        <h5>Tag 3</h5>
+                        <h5>Tag 4</h5>
+                    </div>
+                </div>
+                <div class="card-p-con">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="card-btn-con">
+                    <button>Click</button>
+                </div>
+            </div>
+        </div>  
+
+        <div class="card">
+            <div class="card-text-con">
+                <div class="card-heading">
+                    <h2>Title 3</h2>
+                    <div class="tag-con">
+                        <h5>Tag 5</h5>
+                        <h5>Tag 6</h5>
+                    </div>
+                </div>
+                <div class="card-p-con">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="card-btn-con">
+                    <button>Click</button>
+                </div>
+            </div>
+        </div>  
+        
+        <!-- Duplicate for Infinite Effect -->
+        <div class="card">
+            <div class="card-text-con">
+                <div class="card-heading">
+                    <h2>Title 1</h2>
+                    <div class="tag-con">
+                        <h5>Tag 1</h5>
+                        <h5>Tag 2</h5>
+                    </div>
+                </div>
+                <div class="card-p-con">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="card-btn-con">
+                    <button>Click</button>
+                </div>
+            </div>
+        </div>  
+
+        <div class="card">
+            <div class="card-text-con">
+                <div class="card-heading">
+                    <h2>Title 2</h2>
+                    <div class="tag-con">
+                        <h5>Tag 3</h5>
+                        <h5>Tag 4</h5>
+                    </div>
+                </div>
+                <div class="card-p-con">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="card-btn-con">
+                    <button>Click</button>
+                </div>
+            </div>
+        </div>  
+
+        <div class="card">
+            <div class="card-text-con">
+                <div class="card-heading">
+                    <h2>Title 3</h2>
+                    <div class="tag-con">
+                        <h5>Tag 5</h5>
+                        <h5>Tag 6</h5>
+                    </div>
+                </div>
+                <div class="card-p-con">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="card-btn-con">
+                    <button>Click</button>
+                </div>
+            </div>
+        </div>  
     </div>
-    <div class="image">
-      <img src="imgs/jzml0np4kefssTAuFmPLz.jpg" alt="Mission Image">
-    </div>
-  </div>
+</section>
 </body>
 </html>

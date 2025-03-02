@@ -11,4 +11,3 @@ function scrollAni() {
         img.style.opacity = '1';
     }
 }
-console.log("ss");
