@@ -4,21 +4,7 @@ body {
     box-sizing: border-box;
     background-color: #1e1e1e;
 }
-#progress-con {
-    width: 100%;
-    height: 5px;
-    background: rgb(13,79,124);
-    background-color: #2B2B2B;
-    position: fixed;
-    top: 0%;
-    left: 0;
-    z-index: 100;
-}
-#progress-con div {
-    width: 0;
-    height: 100%;
-    background: #c2c2c2;
-}
+
 ::-webkit-scrollbar {
     width: 10px;         
     background-color: rgb(209, 209, 209);

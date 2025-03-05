@@ -1,7 +1,11 @@
-let liElements = document.querySelectorAll('.small-nav-li');
+let liElements = document.querySelectorAll('.small-nav-li a');
 
-liElements.forEach(function(li) {
-    li.addEventListener('click', function() {
-        this.classList.toggle('active'); 
+liElements.forEach(function(a) {
+    a.addEventListener('click', function(event) {
+        event.preventDefault();
+
+        document.querySelectorAll('.small-nav-li').forEach(item => item.classList.remove('active'));
+
+        this.parentElement.classList.add('active');
     });
 });
