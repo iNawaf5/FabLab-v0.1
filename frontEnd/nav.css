@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  overflow-x: hidden;
+  font-family: poppins;
+  scroll-behavior: smooth;
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  background-color: #1e1e1e;
+}
+* {
+  font-family: poppins;
+  scroll-behavior: smooth;
+}
+.ulNav{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-left: 7%;
+}
+.ulNav a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+nav {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e1e1e97;
+  border-radius: 32px;
+  margin-top: 10px;
+  transition: 0.6s;
+  padding: 0.2%;
+  z-index: 9999;
+  height: 10vh;
+}
+
+.nav-con {
+  display: flex;
+  justify-content: center;
+}
+.log-con {
+  margin-left: 5%;
+}
+
+.log-con img {
+  width: 100px;
+  z-index: 9993;
+}
+.nav-content {
+  background-image: linear-gradient(
+    to right,
+    #54b3d6,
+    #54b3d6 50%,
+    #ffffff 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-content:before {
+  content: "";
+  background: #54b3d6;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-content:hover {
+  background-position: 0;
+}
+
+.nav-content:hover::before {
+  width: 100%;
+}
+/* reigster btns*/
+.reg-con{
+  margin-right: 10%;
+  display: flex;
+  gap: 20px;
+} 
+.reg-btn {
+  padding: 0.5em 1.1em;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: whitesmoke;
+  background: transparent;
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid whitesmoke;
+}
+
+.reg-btn:hover {
+  color: #1d2d44;
+  outline: 2px solid #1d2d44;
+}
+
+.reg-btn::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: whitesmoke;
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.reg-btn:hover::before {
+  width: 250%;
+}
