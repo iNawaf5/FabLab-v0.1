@@ -1,0 +1,42 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.smaller-con{
+    background-color: rgb(55, 55, 55);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 75%;
+    border-radius: 16px;
+    padding: 40px 30px 30px 50px;
+    display: flex;
+    justify-content: center;
+}
+.right-side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding-left: 40px;
+
+}
+.right-side img{
+    width: 330px;
+    border-radius: 16px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.301);
+}
+.right-side img:nth-child(odd){
+    align-self: flex-start;
+}
+.right-side img:nth-child(even){
+    align-self: flex-end;
+}
+.left-side{
+    color: whitesmoke;
+    border-right: 2px solid whitesmoke;
+    padding-right: 40px;
+}
+.left-side p{
+    font-size: 1.05rem;
+}

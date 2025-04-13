@@ -1,0 +1,38 @@
+.project-con, .smaller-con{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.smaller-con{
+    background-color: rgb(55, 55, 55);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 75%;
+    border-radius: 16px;
+    padding: 20px 30px 20px 30px;
+    gap: 50px;
+}
+.p-con{
+    width: 70%;
+    color: whitesmoke;
+}
+.img-con {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+}
+.img-con img{
+    width: 400px;
+    border-radius: 16px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.301);
+}
+.vid-con{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+.vid-con video{
+    width: 60%;
+}

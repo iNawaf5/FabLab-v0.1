@@ -87,9 +87,11 @@
   padding: 20px;
   padding-top: 50px;
 }
-
-.card {
+.card-link{
   width: 25%;
+  text-decoration: none;
+}
+.card {
   height: 35vh;
   background-image: url(imgs/v.jpg);
   background-size: cover;
@@ -211,9 +213,4 @@
 }
 .card:hover .card-p-con {
   transition: opacity 0.6s ease-in-out, visibility 0.6s ease-in-out;
-}
-.card-link {
-  display: block;
-  text-decoration: none; 
-  color: inherit; 
 }
